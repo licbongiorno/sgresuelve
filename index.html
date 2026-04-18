@@ -1,0 +1,1388 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1629">
+    <meta name="robots" content="index, follow">
+    <title>SG Resuelve | Mantenimiento Integral que Sí Cumple — Córdoba</title>
+    <meta name="description" content="Plomería, gas, electricidad, albañilería y pintura en Córdoba. Mantenimiento integral — Presupuesto gratis, trabajo garantizado, un solo llamado.">
+
+    <!-- ═══ PERFORMANCE: DNS prefetch + preconnect ═══ -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- ═══ PERFORMANCE: Font con display=swap para evitar FOIT ═══ -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- ═══ SEO LOCAL AVANZADO: JSON-LD Schema.org ═══ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "SG Resuelve",
+      "description": "Servicio de mantenimiento integral del hogar en Córdoba. Plomería, gas, electricidad, albañilería y pintura. Presupuesto gratis, trabajo garantizado.",
+      "url": "https://sgresuelve.com.ar",
+      "telephone": "+54-9-351-204-9232",
+      "priceRange": "$$",
+      "image": "https://sgresuelve.com.ar/og-image.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Córdoba Capital",
+        "addressLocality": "Córdoba",
+        "addressRegion": "Córdoba",
+        "postalCode": "5000",
+        "addressCountry": "AR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -31.4201,
+        "longitude": -64.1888
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": -31.4201,
+          "longitude": -64.1888
+        },
+        "geoRadius": "40000"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "08:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "13:00"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Mantenimiento Integral",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Plomería",
+              "description": "Filtraciones, destapes, griferías, sanitarios y cañerías."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Instalaciones de Gas",
+              "description": "Detección de fugas, mantenimiento y conexión de calefones, cocinas y estufas."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Electricidad",
+              "description": "Reparaciones, tableros, cableado e instalación de luminarias."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Albañilería",
+              "description": "Refacciones, revoques, cerámicos y durlock. Interior y exterior."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pintura",
+              "description": "Pintura interior y exterior, tratamiento de humedad y enduidos."
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "87"
+      },
+      "sameAs": [
+        "https://wa.me/5493512049232"
+      ]
+    }
+    </script>
+
+    <style>
+    /* ───── TOKENS ───── */
+    :root {
+        --navy:    #0b1629;
+        --navy2:   #152238;
+        --amber:   #f59e0b;
+        --amber2:  #d97706;
+        --ember:   #ff6b35;
+        --light:   #f8fafc;
+        --muted:   #94a3b8;
+        --white:   #ffffff;
+        --green:   #22c55e;
+        --red:     #ef4444;
+
+        --font-display: 'Barlow Condensed', sans-serif;
+        --font-body:    'DM Sans', sans-serif;
+
+        --radius: 12px;
+        --transition: .35s cubic-bezier(.4,0,.2,1);
+    }
+
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; overflow-x:hidden; font-size:16px; }
+    body { font-family: var(--font-body); background: var(--navy); color: var(--white); overflow-x: hidden; }
+
+    /* ───── NOISE OVERLAY ───── */
+    body::before {
+        content:'';
+        position:fixed; inset:0;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+        pointer-events:none;
+        z-index:9999;
+        opacity:.5;
+    }
+
+    img { max-width:100%; display:block; }
+    a { text-decoration:none; color:inherit; }
+
+    /* ───── SKIP LINK (a11y) ───── */
+    .skip-link {
+        position:absolute;
+        top:-100%;
+        left:1rem;
+        background:var(--amber);
+        color:var(--navy);
+        padding:.5rem 1rem;
+        border-radius:0 0 8px 8px;
+        font-weight:700;
+        z-index:9000;
+        transition: top .2s;
+    }
+    .skip-link:focus { top:0; }
+
+    /* ───── HEADER ───── */
+    header {
+        position: fixed; top:0; left:0; right:0;
+        z-index: 500;
+        padding: 1rem 5%;
+        display: flex; align-items:center; justify-content:space-between;
+        transition: var(--transition);
+    }
+    header.scrolled {
+        background: rgba(11,22,41,0.95);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(245,158,11,0.15);
+        padding: .75rem 5%;
+    }
+    .logo {
+        font-family: var(--font-display);
+        font-size: 1.8rem;
+        font-weight: 900;
+        letter-spacing: 1px;
+        display:flex; align-items:center; gap:.5rem;
+    }
+    .logo span { color: var(--amber); }
+    nav { display:flex; align-items:center; gap:2rem; }
+    nav a {
+        font-size:.9rem; font-weight:500; color: var(--muted);
+        transition: color var(--transition); letter-spacing:.5px; text-transform: uppercase;
+    }
+    nav a:hover, nav a:focus-visible { color: var(--amber); outline: none; }
+    .nav-cta {
+        background: var(--amber); color: var(--navy) !important;
+        padding: .55rem 1.2rem; border-radius: 50px; font-weight: 700 !important;
+        transition: background var(--transition), transform var(--transition) !important;
+        min-height: 44px; display:inline-flex; align-items:center;
+    }
+    .nav-cta:hover, .nav-cta:focus-visible { background: var(--amber2); transform: translateY(-2px); outline: 2px solid var(--amber2); outline-offset: 2px; }
+
+    /* ───── HERO ───── */
+    .hero {
+        min-height: 100vh;
+        display: grid; grid-template-rows: 1fr;
+        align-items: center; position: relative;
+        overflow: hidden; padding: 8rem 5% 5rem;
+    }
+    .hero::before {
+        content:''; position:absolute; inset:0;
+        background: linear-gradient(135deg, var(--navy) 0%, #0d2044 60%, #081529 100%);
+    }
+    .hero-grid {
+        position:absolute; inset:0;
+        background-image:
+            linear-gradient(rgba(245,158,11,.06) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(245,158,11,.06) 1px, transparent 1px);
+        background-size: 60px 60px;
+        transform: perspective(800px) rotateX(12deg);
+        transform-origin: top center;
+    }
+    .hero-orb {
+        position:absolute; width: 700px; height: 700px; border-radius: 50%;
+        background: radial-gradient(circle, rgba(245,158,11,.18) 0%, transparent 65%);
+        top: -150px; right: -100px; pointer-events:none;
+    }
+    .hero-orb2 {
+        position:absolute; width: 400px; height: 400px; border-radius: 50%;
+        background: radial-gradient(circle, rgba(255,107,53,.1) 0%, transparent 65%);
+        bottom: 0; left: 10%; pointer-events:none;
+    }
+    .hero-inner { position:relative; z-index:2; max-width: 900px; }
+    .hero-badge {
+        display: inline-flex; align-items:center; gap:.5rem;
+        background: rgba(245,158,11,.12); border: 1px solid rgba(245,158,11,.3);
+        color: var(--amber); font-size:.8rem; font-weight:600;
+        text-transform:uppercase; letter-spacing:1.5px;
+        padding:.4rem 1rem; border-radius:50px; margin-bottom: 1.5rem;
+        animation: fadeUp .6s ease both;
+    }
+    .hero-badge::before {
+        content:''; width:8px; height:8px; background:var(--green); border-radius:50%;
+        box-shadow: 0 0 0 3px rgba(34,197,94,.3); animation: statusPulse 2s ease infinite;
+    }
+    .hero h1 {
+        font-family: var(--font-display); font-size: clamp(3.2rem, 7vw, 6rem);
+        font-weight: 900; line-height: .95; letter-spacing: -1px;
+        text-transform: uppercase; animation: fadeUp .7s .1s ease both;
+    }
+    .hero h1 em { font-style:normal; color: var(--amber); display:block; }
+    .hero-sub {
+        margin-top: 1.5rem; font-size: 1.15rem; color: var(--muted);
+        max-width: 540px; line-height: 1.7; animation: fadeUp .7s .2s ease both;
+    }
+    .hero-sub strong { color: var(--white); }
+    .hero-actions {
+        margin-top: 2.5rem; display:flex; gap:1rem; flex-wrap:wrap;
+        animation: fadeUp .7s .3s ease both;
+    }
+    .btn-primary {
+        background: var(--amber); color: var(--navy);
+        font-family: var(--font-display); font-size: 1.15rem; font-weight: 800;
+        text-transform: uppercase; letter-spacing: 1px; padding: .9rem 2rem;
+        border-radius: 50px; display:inline-flex; align-items:center; gap:.6rem;
+        transition: var(--transition); box-shadow: 0 8px 32px rgba(245,158,11,.35);
+        min-height: 48px; border: none; cursor: pointer;
+    }
+    .btn-primary:hover, .btn-primary:focus-visible {
+        background: var(--amber2); transform: translateY(-3px);
+        box-shadow: 0 14px 40px rgba(245,158,11,.45);
+        outline: 2px solid var(--amber2); outline-offset: 3px;
+    }
+    .btn-ghost {
+        background: transparent; border: 1px solid rgba(255,255,255,.2);
+        color: var(--white); font-size: 1rem; font-weight: 500; padding: .9rem 1.8rem;
+        border-radius: 50px; display:inline-flex; align-items:center; gap:.6rem;
+        transition: var(--transition); min-height: 48px;
+    }
+    .btn-ghost:hover, .btn-ghost:focus-visible { border-color: var(--amber); color: var(--amber); outline: none; }
+    .hero-proof {
+        position:absolute; bottom:2.5rem; left:5%; right:5%; z-index:2;
+        display:flex; gap:2.5rem; flex-wrap:wrap; align-items:center;
+        animation: fadeUp .7s .5s ease both;
+    }
+    .proof-item { display:flex; align-items:center; gap:.6rem; font-size:.88rem; color: var(--muted); }
+    .proof-item svg { color: var(--green); flex-shrink:0; }
+    .proof-item strong { color: var(--white); }
+
+    /* ───── STATS BAND ───── */
+    .stats {
+        background: var(--amber); padding: 2.5rem 5%;
+        display:grid; grid-template-columns: repeat(4, 1fr); gap:1.5rem;
+    }
+    .stat { text-align:center; padding: 1rem; border-right: 1px solid rgba(0,0,0,.1); }
+    .stat:last-child { border:none; }
+    .stat-num {
+        font-family: var(--font-display); font-size: 3rem; font-weight: 900;
+        color: var(--navy); line-height:1; display:block;
+    }
+    .stat-label {
+        font-size: .85rem; font-weight: 600; color: var(--navy2);
+        text-transform:uppercase; letter-spacing:.5px; margin-top:.25rem;
+    }
+
+    /* ───── SECTION SHARED ───── */
+    section { padding: 6rem 5%; }
+    .section-tag {
+        display:inline-block; font-size:.75rem; font-weight:700;
+        text-transform:uppercase; letter-spacing:2px; color: var(--amber); margin-bottom:1rem;
+    }
+    .section-title {
+        font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3.5rem);
+        font-weight:900; text-transform:uppercase; line-height: 1; letter-spacing: -.5px;
+    }
+    .section-sub { margin-top:.75rem; color: var(--muted); font-size:1.05rem; line-height:1.7; max-width:550px; }
+
+    .reveal { opacity:0; transform: translateY(30px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.visible { opacity:1; transform: translateY(0); }
+
+    /* ───── PAIN SECTION ───── */
+    .pain { background: var(--navy2); position:relative; overflow:hidden; }
+    .pain::after {
+        content:''; position:absolute; inset:0;
+        background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f59e0b' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        pointer-events:none;
+    }
+    .pain-inner {
+        display:grid; grid-template-columns: 1fr 1fr; gap: 5rem;
+        align-items:center; position:relative; z-index:1;
+    }
+    .pain-list { list-style:none; display:flex; flex-direction:column; gap:1rem; margin-top:2rem; }
+    .pain-list li {
+        display:flex; align-items:flex-start; gap:1rem;
+        background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.06);
+        border-radius: var(--radius); padding: 1rem 1.2rem;
+        font-size:.95rem; color: var(--muted); line-height:1.5;
+        transition: border-color var(--transition), background var(--transition);
+    }
+    .pain-list li:hover { border-color: rgba(245,158,11,.3); background: rgba(245,158,11,.04); }
+    .pain-icon {
+        width:40px; height:40px; background: rgba(245,158,11,.1); border-radius:8px;
+        display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1.1rem;
+    }
+    .pain-right {
+        background: linear-gradient(135deg, rgba(245,158,11,.08), rgba(255,107,53,.05));
+        border: 1px solid rgba(245,158,11,.15); border-radius: 20px; padding: 2.5rem; text-align:center;
+    }
+    .pain-right .big-text { font-family: var(--font-display); font-size: 5rem; font-weight: 900; color: var(--amber); line-height:1; }
+    .pain-right p { font-size:1.05rem; color: var(--muted); margin-top:1rem; line-height:1.6; }
+    .pain-right strong { color:var(--white); }
+
+    /* ───── SERVICES ───── */
+    .services { background: var(--navy); }
+    .services-header { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:3rem; flex-wrap:wrap; gap:1.5rem; }
+    .services-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:1.5rem; }
+    .service-card {
+        background: var(--navy2); border: 1px solid rgba(255,255,255,.06); border-radius: 16px;
+        padding: 2rem; position:relative; overflow:hidden;
+        transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+    }
+    .service-card::before {
+        content:''; position:absolute; bottom:-60px; right:-60px;
+        width:140px; height:140px; border-radius:50%;
+        background: radial-gradient(circle, rgba(245,158,11,.15) 0%, transparent 70%);
+        transition: var(--transition);
+    }
+    .service-card:hover { transform: translateY(-8px); border-color: rgba(245,158,11,.35); box-shadow: 0 20px 50px rgba(0,0,0,.3), 0 0 0 1px rgba(245,158,11,.1); }
+    .service-card:hover::before { bottom:-20px; right:-20px; width:200px; height:200px; }
+    .service-emoji { font-size: 2.2rem; margin-bottom: 1.2rem; display:block; aria-hidden:true; }
+    .service-card h3 { font-family: var(--font-display); font-size:1.4rem; font-weight:800; text-transform:uppercase; letter-spacing:.5px; margin-bottom:.6rem; }
+    .service-card p { font-size:.9rem; color: var(--muted); line-height:1.6; }
+    .service-tag { display:inline-block; margin-top:1.2rem; font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; color: var(--amber); border: 1px solid rgba(245,158,11,.3); border-radius:50px; padding:.2rem .75rem; }
+
+    /* ───── HOW IT WORKS ───── */
+    .how { background: var(--navy2); position:relative; }
+    .steps { display:grid; grid-template-columns: repeat(3,1fr); gap:2rem; margin-top:3rem; position:relative; }
+    .steps::before {
+        content:''; position:absolute; top:2.5rem;
+        left:calc(16.66% + 1rem); right:calc(16.66% + 1rem); height:2px;
+        background: linear-gradient(90deg, var(--amber), var(--ember)); opacity:.3;
+    }
+    .step {
+        text-align:center; padding: 2rem 1.5rem; background: rgba(255,255,255,.02);
+        border: 1px solid rgba(255,255,255,.06); border-radius: 16px;
+        position:relative; transition: var(--transition);
+    }
+    .step:hover { border-color: rgba(245,158,11,.3); background: rgba(245,158,11,.03); }
+    .step-num { font-family: var(--font-display); font-size: 4rem; font-weight:900; color: rgba(245,158,11,.12); line-height:1; position:absolute; top:.75rem; right:1rem; }
+    .step-icon { width:52px; height:52px; background: linear-gradient(135deg, var(--amber), var(--ember)); border-radius: 14px; display:flex; align-items:center; justify-content:center; margin: 0 auto 1.2rem; font-size:1.4rem; }
+    .step h3 { font-family: var(--font-display); font-size:1.3rem; font-weight:800; text-transform:uppercase; margin-bottom:.5rem; }
+    .step p { font-size:.88rem; color:var(--muted); line-height:1.6; }
+
+    /* ───── ABOUT / TRUST ───── */
+    .about { background: var(--navy); }
+    .about-inner { display:grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items:center; }
+    .trust-list { list-style:none; display:flex; flex-direction:column; gap:.75rem; margin-top:1.5rem; }
+    .trust-list li { display:flex; align-items:center; gap:.75rem; font-size:.95rem; color: var(--muted); }
+    .trust-list li::before {
+        content:'✓'; width:22px; height:22px; background: rgba(34,197,94,.15);
+        border-radius:50%; display:flex; align-items:center; justify-content:center;
+        font-size:.75rem; color: var(--green); flex-shrink:0; font-weight:700;
+    }
+    .clients-band { margin-top:2rem; padding-top:2rem; border-top:1px solid rgba(255,255,255,.07); }
+    .clients-band p { font-size:.8rem; text-transform:uppercase; letter-spacing:1.5px; color:var(--muted); margin-bottom:1rem; font-weight:600; }
+    .client-badges { display:flex; gap:1rem; flex-wrap:wrap; }
+    .client-badge { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); border-radius:8px; padding:.5rem 1rem; font-size:.82rem; color: var(--muted); font-weight:500; }
+    .about-visual {
+        background: linear-gradient(135deg, var(--navy2) 0%, #1a2f52 100%);
+        border: 1px solid rgba(245,158,11,.15); border-radius: 20px; min-height: 450px;
+        position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center;
+    }
+    .about-visual::before {
+        content:''; position:absolute; inset:0;
+        background: radial-gradient(circle at 30% 70%, rgba(245,158,11,.1) 0%, transparent 60%);
+    }
+    .about-visual-inner { text-align:center; position:relative; z-index:1; padding:2rem; }
+    .avatar-ring {
+        width:120px; height:120px; border-radius:50%; background: var(--amber);
+        display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem;
+        font-family: var(--font-display); font-size:3rem; font-weight:900; color:var(--navy);
+        box-shadow: 0 0 0 6px rgba(245,158,11,.15), 0 0 0 12px rgba(245,158,11,.07);
+    }
+    .about-visual-inner h3 { font-family: var(--font-display); font-size:1.8rem; font-weight:900; text-transform:uppercase; }
+    .about-visual-inner p { font-size:.9rem; color:var(--muted); margin-top:.3rem; }
+    .rating-stars { margin-top:1.5rem; font-size:1.4rem; letter-spacing:3px; color: var(--amber); }
+
+    /* ───── TESTIMONIALS ───── */
+    .testimonials { background: var(--navy2); overflow:hidden; }
+    .testimonials-grid { display:grid; grid-template-columns: repeat(3,1fr); gap:1.5rem; margin-top:3rem; }
+    .testi-card { background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.07); border-radius:16px; padding:1.8rem; transition: border-color var(--transition); }
+    .testi-card:hover { border-color: rgba(245,158,11,.3); }
+    .testi-stars { color:var(--amber); font-size:.95rem; letter-spacing:2px; margin-bottom:1rem; }
+    .testi-text { font-size:.95rem; color:var(--muted); line-height:1.7; font-style:italic; margin-bottom:1.5rem; }
+    .testi-author { display:flex; align-items:center; gap:.75rem; }
+    .testi-avatar { width:40px; height:40px; border-radius:50%; background: var(--amber); display:flex; align-items:center; justify-content:center; font-family: var(--font-display); font-weight:900; font-size:1rem; color:var(--navy); flex-shrink:0; }
+    .testi-name { font-weight:600; font-size:.9rem; }
+    .testi-loc { font-size:.78rem; color:var(--muted); }
+
+    /* ───── URGENCY ───── */
+    .urgency {
+        background: linear-gradient(135deg, #1a0f00 0%, #2d1a00 50%, #1a0f00 100%);
+        border-top: 1px solid rgba(245,158,11,.2); border-bottom: 1px solid rgba(245,158,11,.2);
+        text-align:center; padding: 4rem 5%; position:relative; overflow:hidden;
+    }
+    .urgency::before { content:''; position:absolute; inset:0; background: radial-gradient(ellipse at center, rgba(245,158,11,.1) 0%, transparent 60%); }
+    .urgency-inner { position:relative; z-index:1; max-width:650px; margin:0 auto; }
+    .urgency h2 { font-family: var(--font-display); font-size: clamp(2rem,5vw,3.2rem); font-weight:900; text-transform:uppercase; color: var(--amber); line-height:1; margin-bottom:1rem; }
+    .urgency p { color:var(--muted); font-size:1.05rem; line-height:1.7; margin-bottom:2rem; }
+    .availability { display:flex; justify-content:center; gap:.5rem; margin:1.5rem 0; flex-wrap:wrap; }
+    .avail-dot { width:14px; height:14px; border-radius:50%; }
+    .avail-dot.taken { background:#ef4444; }
+    .avail-dot.open { background:var(--green); }
+    .avail-dot.maybe { background:var(--amber); }
+    .avail-legend { display:flex; justify-content:center; gap:1.5rem; margin-top:.5rem; font-size:.78rem; color:var(--muted); flex-wrap:wrap; }
+    .avail-legend span { display:flex; align-items:center; gap:.4rem; }
+
+    /* ───── CONTACT FORM ───── */
+    .contact { background: var(--navy); }
+    .contact-inner { display:grid; grid-template-columns: 1fr 1fr; gap:4rem; align-items:start; }
+    .contact-form {
+        background: var(--navy2);
+        border: 1px solid rgba(255,255,255,.07);
+        border-radius: 20px;
+        padding: 2.5rem;
+    }
+    .contact-form h3 { font-family: var(--font-display); font-size:1.6rem; font-weight:900; text-transform:uppercase; margin-bottom:1.5rem; }
+    .form-group { margin-bottom:1.2rem; }
+    .form-group label {
+        display:block; font-size:.83rem; font-weight:600; color:var(--muted);
+        text-transform:uppercase; letter-spacing:.8px; margin-bottom:.45rem;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        width:100%; padding:.8rem 1rem;
+        background: rgba(255,255,255,.04);
+        border: 1px solid rgba(255,255,255,.1);
+        border-radius: var(--radius);
+        color: var(--white); font-family: var(--font-body); font-size:.95rem;
+        transition: border-color var(--transition), box-shadow var(--transition);
+        outline:none;
+        -webkit-appearance: none; appearance: none;
+    }
+    .form-group textarea { resize: vertical; min-height:110px; }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: rgba(148,163,184,.4); }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+        border-color: var(--amber);
+        box-shadow: 0 0 0 3px rgba(245,158,11,.15);
+    }
+    /* Error state */
+    .form-group input.error,
+    .form-group textarea.error,
+    .form-group select.error {
+        border-color: var(--red);
+        box-shadow: 0 0 0 3px rgba(239,68,68,.15);
+        animation: shake .3s ease;
+    }
+    .field-error {
+        display:none; color: var(--red); font-size:.78rem;
+        margin-top:.3rem; font-weight:500;
+    }
+    .field-error.visible { display:block; }
+    .form-success {
+        display:none; text-align:center; padding:2rem;
+    }
+    .form-success.visible { display:block; }
+    .form-success svg { color:var(--green); margin:0 auto 1rem; display:block; }
+    .form-success p { color:var(--muted); }
+    .contact-info-list { display:flex; flex-direction:column; gap:1.5rem; margin-top:2rem; }
+    .contact-info-item { display:flex; align-items:center; gap:1rem; }
+    .contact-info-icon {
+        width:48px; height:48px; border-radius:12px;
+        background: rgba(245,158,11,.1); display:flex; align-items:center; justify-content:center;
+        flex-shrink:0; color:var(--amber);
+    }
+    .contact-info-item h4 { font-size:.85rem; font-weight:600; text-transform:uppercase; letter-spacing:.5px; color:var(--muted); margin-bottom:.15rem; }
+    .contact-info-item p { font-size:1rem; font-weight:500; }
+
+    /* ───── FAQ ───── */
+    .faq { background: var(--navy2); }
+    .faq-grid { display:grid; grid-template-columns: 1fr 1fr; gap:1rem; margin-top:3rem; }
+    .faq-item {
+        background: var(--navy);
+        border: 1px solid rgba(255,255,255,.06); border-radius:12px; overflow:hidden;
+        transition: border-color var(--transition);
+    }
+    .faq-item:hover { border-color: rgba(245,158,11,.25); }
+    /* A11y: el trigger del FAQ es un <button> real */
+    .faq-q {
+        width:100%; background:transparent; border:none;
+        padding:1.2rem 1.5rem; display:flex; align-items:center; justify-content:space-between;
+        gap:1rem; font-weight:600; font-size:.95rem; color:var(--white);
+        cursor:pointer; text-align:left; font-family: var(--font-body);
+        transition: color var(--transition);
+    }
+    .faq-q:hover { color:var(--amber); }
+    .faq-q:focus-visible { outline:2px solid var(--amber); outline-offset:-2px; border-radius:12px; }
+    .faq-arrow {
+        width:24px; height:24px; border-radius:50%;
+        background: rgba(245,158,11,.1); border:1px solid rgba(245,158,11,.2);
+        display:flex; align-items:center; justify-content:center;
+        flex-shrink:0; transition: var(--transition);
+        color: var(--amber); font-size:.8rem;
+    }
+    .faq-item[aria-expanded="true"] .faq-arrow { transform:rotate(180deg); background: var(--amber); color:var(--navy); }
+    .faq-a {
+        max-height:0; overflow:hidden;
+        transition: max-height .4s ease, padding .4s ease;
+        padding: 0 1.5rem;
+        font-size:.9rem; color:var(--muted); line-height:1.7;
+    }
+    .faq-item[aria-expanded="true"] .faq-a { max-height: 200px; padding-bottom:1.2rem; }
+
+    /* ───── FINAL CTA ───── */
+    .final-cta { background: var(--amber); color: var(--navy); text-align:center; padding: 5rem 5%; position:relative; overflow:hidden; }
+    .final-cta::before { content:''; position:absolute; inset:0; background-image: linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px), linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px); background-size:40px 40px; }
+    .final-cta-inner { position:relative; z-index:1; max-width:700px; margin:0 auto; }
+    .final-cta h2 { font-family: var(--font-display); font-size: clamp(2.5rem, 6vw, 4rem); font-weight:900; text-transform:uppercase; line-height:.95; margin-bottom:1.2rem; }
+    .final-cta p { font-size:1.1rem; color:rgba(11,22,41,.7); margin-bottom:2rem; }
+    .btn-dark {
+        background: var(--navy); color: var(--white);
+        font-family: var(--font-display); font-size:1.15rem; font-weight:800;
+        text-transform:uppercase; letter-spacing:1px; padding:.9rem 2rem;
+        border-radius:50px; display:inline-flex; align-items:center; gap:.6rem;
+        transition: var(--transition); box-shadow: 0 8px 30px rgba(0,0,0,.25);
+        min-height:48px; border:none; cursor:pointer;
+    }
+    .btn-dark:hover, .btn-dark:focus-visible { background:#1e3a6e; transform:translateY(-3px); outline:2px solid var(--navy); outline-offset:3px; }
+
+    /* ───── FOOTER ───── */
+    footer {
+        background: #060d1a; padding: 2.5rem 5%;
+        display:flex; justify-content:space-between; align-items:center;
+        flex-wrap:wrap; gap:1rem; border-top: 1px solid rgba(255,255,255,.06);
+    }
+    footer .logo { font-size:1.4rem; }
+    footer p { font-size:.82rem; color:var(--muted); }
+    footer a { color:var(--amber); }
+
+    /* ═══ MICROINTERACCIÓN: WA FLOAT ═══ */
+    .wa-float {
+        position:fixed; bottom:2rem; right:2rem;
+        background:#25d366; color:white;
+        width:58px; height:58px; border-radius:50%;
+        display:flex; align-items:center; justify-content:center;
+        box-shadow: 0 4px 20px rgba(37,211,102,.4);
+        z-index:400;
+        /* Inicio invisible — aparece con scroll */
+        opacity:0; pointer-events:none;
+        transform: scale(0.8) translateY(10px);
+        transition: opacity .4s ease, transform .4s ease, box-shadow var(--transition);
+    }
+    /* Estado visible (añadido vía JS tras 200px de scroll) */
+    .wa-float.wa-visible {
+        opacity:1; pointer-events:auto;
+        transform: scale(1) translateY(0);
+        /* Pulse de latido continuo */
+        animation: waPulse 2.8s ease-in-out infinite;
+    }
+    .wa-float:hover {
+        transform:scale(1.12) translateY(-4px) !important;
+        box-shadow: 0 8px 30px rgba(37,211,102,.55) !important;
+        animation-play-state: paused;
+    }
+    .wa-float svg { width:30px; height:30px; fill:white; }
+    .wa-float::before {
+        content:'¡Consultá gratis!'; position:absolute; right:70px;
+        background:rgba(0,0,0,.85); backdrop-filter:blur(8px);
+        color:white; padding:.4rem .9rem; border-radius:50px;
+        font-size:.8rem; white-space:nowrap;
+        opacity:0; transform:translateX(10px);
+        transition: var(--transition); pointer-events:none;
+    }
+    .wa-float:hover::before { opacity:1; transform:translateX(0); }
+
+    /* ───── KEYFRAMES ───── */
+    @keyframes fadeUp {
+        from { opacity:0; transform:translateY(24px); }
+        to   { opacity:1; transform:translateY(0); }
+    }
+    @keyframes statusPulse {
+        0%,100% { box-shadow: 0 0 0 3px rgba(34,197,94,.3); }
+        50%      { box-shadow: 0 0 0 7px rgba(34,197,94,.1); }
+    }
+    /* Latido del botón de WhatsApp */
+    @keyframes waPulse {
+        0%   { box-shadow: 0 4px 20px rgba(37,211,102,.4), 0 0 0 0 rgba(37,211,102,.5); }
+        35%  { box-shadow: 0 4px 20px rgba(37,211,102,.4), 0 0 0 10px rgba(37,211,102,.15); }
+        70%  { box-shadow: 0 4px 20px rgba(37,211,102,.4), 0 0 0 18px rgba(37,211,102,0); }
+        100% { box-shadow: 0 4px 20px rgba(37,211,102,.4), 0 0 0 0 rgba(37,211,102,0); }
+    }
+    @keyframes shake {
+        0%,100% { transform: translateX(0); }
+        20%      { transform: translateX(-5px); }
+        40%      { transform: translateX(5px); }
+        60%      { transform: translateX(-3px); }
+        80%      { transform: translateX(3px); }
+    }
+
+    /* ───── RESPONSIVE ───── */
+    @media (max-width:1024px) {
+        .stats { grid-template-columns: repeat(2,1fr); }
+        .testimonials-grid { grid-template-columns: 1fr 1fr; }
+        .steps::before { display:none; }
+        .contact-inner { grid-template-columns:1fr; gap:2.5rem; }
+    }
+    @media (max-width:768px) {
+        nav { display:none; }
+        .hero { padding:7rem 5% 7rem; }
+        .pain-inner { grid-template-columns:1fr; gap:2.5rem; }
+        .about-inner { grid-template-columns:1fr; }
+        .steps { grid-template-columns:1fr; }
+        .faq-grid { grid-template-columns:1fr; }
+        .testimonials-grid { grid-template-columns:1fr; }
+        footer { flex-direction:column; text-align:center; }
+        .stats { grid-template-columns: 1fr 1fr; }
+        .stat { border-right:none; border-bottom: 1px solid rgba(0,0,0,.1); }
+        .stat:nth-child(2n) { border-right:none; }
+        .hero-proof { flex-direction:column; gap:.75rem; align-items:flex-start; }
+    }
+    @media (max-width:480px) {
+        .hero h1 { font-size:2.8rem; }
+        .hero-actions { flex-direction:column; }
+        .btn-primary, .btn-ghost { width:100%; justify-content:center; }
+    }
+    /* Reduced motion: respetar preferencias del usuario */
+    @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+        .wa-float { animation: none !important; }
+    }
+    </style>
+</head>
+<body>
+
+<!-- A11Y: Skip navigation -->
+<a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+<!-- HEADER -->
+<header id="header" role="banner">
+    <div class="logo" aria-label="SG Resuelve — Inicio">SG<span>Resuelve</span></div>
+    <nav role="navigation" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#como-funciona">Cómo Trabajamos</a>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="https://wa.me/5493512049232?text=Hola%20Santiago,%20vengo%20de%20tu%20sitio%20web.%20Quisiera%20un%20presupuesto."
+           target="_blank" rel="noopener noreferrer"
+           class="nav-cta"
+           aria-label="Contactar por WhatsApp para presupuesto">
+           Contactar ahora
+        </a>
+    </nav>
+</header>
+
+<!-- MAIN CONTENT -->
+<main id="main-content">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-title">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-orb" aria-hidden="true"></div>
+    <div class="hero-orb2" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+        <div class="hero-badge" aria-live="polite">Disponible esta semana en Córdoba</div>
+
+        <h1 id="hero-title">
+            Tu casa rota<br>
+            <em>hoy mismo<br>la resolvemos.</em>
+        </h1>
+
+        <p class="hero-sub">
+            Plomería, gas, electricidad, albañilería y pintura.<br>
+            <strong>Un equipo de confianza. Un solo llamado. Sin vueltas.</strong><br>
+            Presupuesto 100% gratis y sin compromiso.
+        </p>
+
+        <div class="hero-actions">
+            <a href="https://wa.me/5493512049232?text=Hola%20Santiago,%20necesito%20un%20presupuesto%20sin%20cargo."
+               target="_blank" rel="noopener noreferrer"
+               class="btn-primary"
+               aria-label="Pedir presupuesto gratuito por WhatsApp">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                Pedir presupuesto gratis
+            </a>
+            <a href="#servicios" class="btn-ghost" aria-label="Ver todos los servicios disponibles">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                Ver todos los servicios
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-proof" role="list" aria-label="Credenciales y confianza">
+        <div class="proof-item" role="listitem">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span><strong>+350</strong> trabajos realizados</span>
+        </div>
+        <div class="proof-item" role="listitem">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span><strong>Inmobiliarias</strong> y <strong>Fuerza Aérea</strong> confían</span>
+        </div>
+        <div class="proof-item" role="listitem">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>Trabajo <strong>garantizado</strong></span>
+        </div>
+    </div>
+</section>
+
+<!-- STATS -->
+<div class="stats" role="region" aria-label="Estadísticas del servicio">
+    <div class="stat">
+        <span class="stat-num" data-target="350" aria-label="Más de 350 trabajos completados">0</span>
+        <span class="stat-label">Trabajos completados</span>
+    </div>
+    <div class="stat">
+        <span class="stat-num" data-target="8" aria-label="8 años de experiencia">0</span>
+        <span class="stat-label">Años de experiencia</span>
+    </div>
+    <div class="stat">
+        <span class="stat-num" data-target="98" aria-label="98 por ciento de clientes satisfechos">0</span>
+        <span class="stat-label">% de clientes satisfechos</span>
+    </div>
+    <div class="stat">
+        <span class="stat-num" data-target="5" aria-label="5 rubros cubiertos en un solo servicio">0</span>
+        <span class="stat-label">Rubros en uno solo</span>
+    </div>
+</div>
+
+<!-- PAIN SECTION -->
+<section class="pain" aria-labelledby="pain-title">
+    <div class="pain-inner">
+        <div class="reveal">
+            <span class="section-tag">¿Te suena familiar?</span>
+            <h2 class="section-title" id="pain-title">El problema con los técnicos de siempre</h2>
+            <ul class="pain-list" aria-label="Problemas frecuentes con técnicos comunes">
+                <li>
+                    <div class="pain-icon" aria-hidden="true">📅</div>
+                    <div>Te dan turno para <strong style="color:#fff">3 semanas</strong>, y encima después no aparecen.</div>
+                </li>
+                <li>
+                    <div class="pain-icon" aria-hidden="true">💸</div>
+                    <div>El presupuesto cambia <strong style="color:#fff">una vez que empezaron</strong>, y ya no podés decir que no.</div>
+                </li>
+                <li>
+                    <div class="pain-icon" aria-hidden="true">🔄</div>
+                    <div>Para cada problema necesitás <strong style="color:#fff">un técnico diferente</strong>: uno de gas, otro de electricidad, otro de plomería...</div>
+                </li>
+                <li>
+                    <div class="pain-icon" aria-hidden="true">🏚️</div>
+                    <div>Dejan todo hecho un <strong style="color:#fff">desastre</strong> y sos vos quien tiene que limpiar después.</div>
+                </li>
+            </ul>
+        </div>
+        <div class="reveal">
+            <div class="pain-right">
+                <div class="big-text" aria-hidden="true">1</div>
+                <p>Necesitás <strong>un equipo de confianza</strong> que te resuelva todo.<br>Sin vueltas. Sin sorpresas. Sin drama.</p>
+                <a href="https://wa.me/5493512049232?text=Hola%20Santiago,%20necesito%20ayuda%20con%20una%20reparación."
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-primary"
+                   style="margin-top:1.5rem; display:inline-flex;"
+                   aria-label="Contactar al equipo de SG Resuelve por WhatsApp">
+                    Así trabajamos →
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="servicios" class="services" aria-labelledby="services-title">
+    <div class="services-header">
+        <div class="reveal">
+            <span class="section-tag">Mantenimiento integral</span>
+            <h2 class="section-title" id="services-title">Qué hacemos</h2>
+            <p class="section-sub">Todo el mantenimiento que tu hogar o local necesita: un solo llamado, un equipo de confianza.</p>
+        </div>
+    </div>
+
+    <div class="services-grid" role="list" aria-label="Lista de servicios">
+        <article class="service-card reveal" role="listitem">
+            <span class="service-emoji" aria-hidden="true">⚡</span>
+            <h3>Electricidad</h3>
+            <p>Reparaciones, cambio de cableado, tableros, instalación de luminarias y más. Todo bajo normas de seguridad.</p>
+            <span class="service-tag">Rápido y seguro</span>
+        </article>
+        <article class="service-card reveal" role="listitem">
+            <span class="service-emoji" aria-hidden="true">🔧</span>
+            <h3>Plomería</h3>
+            <p>Filtraciones, destapes, griferías, sanitarios y cañerías. Sin pérdidas que te generen daños mayores.</p>
+            <span class="service-tag">Sin más goteras</span>
+        </article>
+        <article class="service-card reveal" role="listitem">
+            <span class="service-emoji" aria-hidden="true">🔥</span>
+            <h3>Gas</h3>
+            <p>Detección de fugas, mantenimiento de instalaciones, y conexión segura de calefones, cocinas y estufas.</p>
+            <span class="service-tag">Certificado</span>
+        </article>
+        <article class="service-card reveal" role="listitem">
+            <span class="service-emoji" aria-hidden="true">🧱</span>
+            <h3>Albañilería</h3>
+            <p>Refacciones, revoques, cerámicos y durlock. Desde un bache en la pared hasta una reforma completa.</p>
+            <span class="service-tag">Interior y exterior</span>
+        </article>
+        <article class="service-card reveal" role="listitem">
+            <span class="service-emoji" aria-hidden="true">🎨</span>
+            <h3>Pintura</h3>
+            <p>Interior y exterior, tratamiento de humedad, enduidos y acabados prolijos que duran en el tiempo.</p>
+            <span class="service-tag">Acabado premium</span>
+        </article>
+        <article class="service-card reveal" role="listitem" style="background:rgba(245,158,11,.06); border-color:rgba(245,158,11,.25);">
+            <span class="service-emoji" aria-hidden="true">🏠</span>
+            <h3>¿Algo más?</h3>
+            <p>Si tu problema no está en la lista, consultanos igual. La mayoría de las cosas del hogar las podemos resolver.</p>
+            <a href="https://wa.me/5493512049232?text=Hola%20Santiago,%20tengo%20una%20consulta."
+               target="_blank" rel="noopener noreferrer"
+               class="btn-primary"
+               style="margin-top:1.2rem; font-size:.9rem; padding:.6rem 1.3rem;"
+               aria-label="Consultar gratis por WhatsApp sobre otro servicio">
+               Consultar gratis →
+            </a>
+        </article>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="como-funciona" class="how" aria-labelledby="how-title">
+    <div class="reveal">
+        <span class="section-tag">Proceso</span>
+        <h2 class="section-title" id="how-title">Así de fácil funciona</h2>
+        <p class="section-sub">Tres pasos, sin complicaciones. Hoy podés estar durmiendo tranquilo.</p>
+    </div>
+    <ol class="steps" aria-label="Pasos del proceso de trabajo">
+        <li class="step reveal">
+            <div class="step-num" aria-hidden="true">01</div>
+            <div class="step-icon" aria-hidden="true">💬</div>
+            <h3>Nos escribís</h3>
+            <p>Un mensaje por WhatsApp es suficiente. Contanos qué está pasando y mandanos una foto si podés. Sin formularios, sin espera.</p>
+        </li>
+        <li class="step reveal">
+            <div class="step-num" aria-hidden="true">02</div>
+            <div class="step-icon" aria-hidden="true">📋</div>
+            <h3>Presupuesto claro</h3>
+            <p>Te enviamos un presupuesto detallado, sin letra chica. Sabés exactamente qué se va a hacer y cuánto vas a pagar. Sin sorpresas.</p>
+        </li>
+        <li class="step reveal">
+            <div class="step-num" aria-hidden="true">03</div>
+            <div class="step-icon" aria-hidden="true">✅</div>
+            <h3>Lo resolvemos</h3>
+            <p>Vamos, trabajamos prolijo, limpiamos todo al terminar, y no nos vamos hasta que quedaste conforme. Así, siempre.</p>
+        </li>
+    </ol>
+</section>
+
+<!-- ABOUT -->
+<section id="sobre-nosotros" class="about" aria-labelledby="about-title">
+    <div class="about-inner">
+        <div class="reveal">
+            <span class="section-tag">Quiénes somos</span>
+            <h2 class="section-title" id="about-title">SG Resuelve — Mantenimiento Integral</h2>
+            <p class="section-sub" style="margin-top:1rem;">Llevamos más de 8 años en el rubro, y aprendimos que lo que la gente realmente necesita no es solo un técnico — necesita un equipo de confianza que entre a su casa y resuelva los problemas de verdad.</p>
+
+            <ul class="trust-list" style="margin-top:1.5rem;" aria-label="Compromisos de SG Resuelve">
+                <li>Presupuestos escritos, claros y sin sorpresas al final</li>
+                <li>Llegamos en el horario acordado, siempre</li>
+                <li>Limpiamos todo cuando terminamos, sin excepciones</li>
+                <li>Un equipo coordinado para todos los trabajos</li>
+                <li>Garantía real en cada trabajo realizado</li>
+                <li>Trato respetuoso dentro de tu propiedad</li>
+            </ul>
+
+            <div class="clients-band">
+                <p>Trabajan con nosotros habitualmente</p>
+                <div class="client-badges" role="list" aria-label="Clientes frecuentes">
+                    <span class="client-badge" role="listitem">✈️ Fuerza Aérea Argentina</span>
+                    <span class="client-badge" role="listitem">🏢 Inmobiliarias de Córdoba</span>
+                    <span class="client-badge" role="listitem">🏠 Familias y vecinos</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-visual reveal" aria-hidden="true">
+            <div class="about-visual-inner">
+                <div class="avatar-ring">SG</div>
+                <h3>SG Resuelve</h3>
+                <p>Mantenimiento integral del hogar — Córdoba</p>
+                <div class="rating-stars" role="img" aria-label="5 estrellas de calificación">★★★★★</div>
+                <p style="margin-top:.5rem; font-size:.82rem; color:var(--muted);">+350 trabajos · 8 años de experiencia</p>
+                <a href="https://wa.me/5493512049232?text=Hola%20Santiago,%20quiero%20un%20presupuesto."
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-primary"
+                   style="margin-top:1.8rem; font-size:.95rem;"
+                   aria-label="Contactar a SG Resuelve por WhatsApp">
+                    Contactar ahora
+                </a>
+                <p style="margin-top:1rem; font-size:.75rem; color:var(--muted);">Respondemos en menos de 1 hora hábil</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" aria-labelledby="testi-title">
+    <div class="reveal" style="text-align:center;">
+        <span class="section-tag">Opiniones reales</span>
+        <h2 class="section-title" id="testi-title">Lo que dicen nuestros clientes</h2>
+    </div>
+    <div class="testimonials-grid" role="list" aria-label="Testimonios de clientes">
+        <blockquote class="testi-card reveal" role="listitem">
+            <div class="testi-stars" role="img" aria-label="5 estrellas">★★★★★</div>
+            <p class="testi-text">"Teníamos una pérdida de agua que el anterior plomero no pudo encontrar. Santiago llegó, la detectó y la resolvió en el mismo día. Prolijo, puntual y honesto con el precio."</p>
+            <footer class="testi-author">
+                <div class="testi-avatar" aria-hidden="true">MR</div>
+                <div>
+                    <div class="testi-name">María R.</div>
+                    <div class="testi-loc">Nueva Córdoba</div>
+                </div>
+            </footer>
+        </blockquote>
+        <blockquote class="testi-card reveal" role="listitem">
+            <div class="testi-stars" role="img" aria-label="5 estrellas">★★★★★</div>
+            <p class="testi-text">"Los usamos para refaccionar un departamento entre inquilinos. Hicieron plomería, electricidad y pintura. Un solo equipo, todo resuelto. Ahorramos tiempo y plata."</p>
+            <footer class="testi-author">
+                <div class="testi-avatar" aria-hidden="true">CA</div>
+                <div>
+                    <div class="testi-name">Carlos A.</div>
+                    <div class="testi-loc">Inmobiliaria Centro</div>
+                </div>
+            </footer>
+        </blockquote>
+        <blockquote class="testi-card reveal" role="listitem">
+            <div class="testi-stars" role="img" aria-label="5 estrellas">★★★★★</div>
+            <p class="testi-text">"Llegaron el mismo día que los llamé. Revisaron el gas, encontraron una fuga que yo no sabía que tenía y la arreglaron. Me explicaron todo lo que hicieron. Muy profesionales."</p>
+            <footer class="testi-author">
+                <div class="testi-avatar" aria-hidden="true">LP</div>
+                <div>
+                    <div class="testi-name">Laura P.</div>
+                    <div class="testi-loc">Güemes</div>
+                </div>
+            </footer>
+        </blockquote>
+    </div>
+</section>
+
+<!-- URGENCY -->
+<section class="urgency" aria-labelledby="urgency-title">
+    <div class="urgency-inner reveal">
+        <h2 id="urgency-title">Turnos disponibles esta semana</h2>
+        <p>Trabajamos con agenda limitada para garantizar calidad en cada trabajo. Asegurate tu turno antes de que se completen los espacios.</p>
+        <div class="availability" role="img" aria-label="Disponibilidad de turnos: 3 ocupados, 2 disponibles, 2 casi completos">
+            <div class="avail-dot taken"></div>
+            <div class="avail-dot taken"></div>
+            <div class="avail-dot taken"></div>
+            <div class="avail-dot open"></div>
+            <div class="avail-dot open"></div>
+            <div class="avail-dot maybe"></div>
+            <div class="avail-dot maybe"></div>
+        </div>
+        <div class="avail-legend" aria-hidden="true">
+            <span><span class="avail-dot taken" style="display:inline-block; width:10px; height:10px;"></span> Ocupado</span>
+            <span><span class="avail-dot open" style="display:inline-block; width:10px; height:10px;"></span> Disponible</span>
+            <span><span class="avail-dot maybe" style="display:inline-block; width:10px; height:10px;"></span> Casi completo</span>
+        </div>
+        <div style="margin-top:2rem;">
+            <a href="https://wa.me/5493512049232?text=Hola%20Santiago,%20quiero%20asegurar%20un%20turno%20esta%20semana."
+               target="_blank" rel="noopener noreferrer"
+               class="btn-primary"
+               style="font-size:1.1rem; padding:1rem 2.2rem;"
+               aria-label="Reservar turno esta semana por WhatsApp">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                Reservar mi turno ahora
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="contacto" class="contact" aria-labelledby="contact-title">
+    <div class="contact-inner">
+        <div class="reveal">
+            <span class="section-tag">Contacto directo</span>
+            <h2 class="section-title" id="contact-title">¿Tenés un trabajo en mente?</h2>
+            <p class="section-sub" style="margin-top:.75rem;">Completá el formulario y te respondemos en menos de 1 hora hábil, o escribinos directamente por WhatsApp.</p>
+
+            <div class="contact-info-list" style="margin-top:2rem;">
+                <div class="contact-info-item">
+                    <div class="contact-info-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    </div>
+                    <div>
+                        <h4>WhatsApp / Teléfono</h4>
+                        <p><a href="https://wa.me/5493512049232" target="_blank" rel="noopener noreferrer" style="color:var(--amber)">+54 9 351 204-9232</a></p>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-info-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                        <h4>Zona de cobertura</h4>
+                        <p>Córdoba Capital y Gran Córdoba</p>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-info-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <div>
+                        <h4>Horario de atención</h4>
+                        <p>Lun–Vie 8:00–19:00 · Sáb 8:00–13:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form reveal">
+            <h3>Consultá sin cargo</h3>
+            <form id="contact-form" novalidate aria-label="Formulario de consulta de servicio">
+                <div class="form-group">
+                    <label for="cf-name">Nombre <span aria-hidden="true" style="color:var(--amber)">*</span></label>
+                    <input type="text" id="cf-name" name="nombre" placeholder="Tu nombre" autocomplete="name" required aria-required="true" aria-describedby="cf-name-error">
+                    <span class="field-error" id="cf-name-error" role="alert">Por favor ingresá tu nombre.</span>
+                </div>
+                <div class="form-group">
+                    <label for="cf-phone">Teléfono / WhatsApp <span aria-hidden="true" style="color:var(--amber)">*</span></label>
+                    <input type="tel" id="cf-phone" name="telefono" placeholder="Ej: 351 204-9232" autocomplete="tel" required aria-required="true" aria-describedby="cf-phone-error">
+                    <span class="field-error" id="cf-phone-error" role="alert">Por favor ingresá un número de contacto.</span>
+                </div>
+                <div class="form-group">
+                    <label for="cf-service">Tipo de servicio</label>
+                    <select id="cf-service" name="servicio" aria-label="Seleccioná el tipo de servicio que necesitás" style="background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.1); border-radius:var(--radius); color:var(--white); font-family:var(--font-body); font-size:.95rem; padding:.8rem 1rem; width:100%; outline:none; cursor:pointer;">
+                        <option value="" style="background:#152238">Seleccioná el servicio</option>
+                        <option value="electricidad" style="background:#152238">⚡ Electricidad</option>
+                        <option value="plomeria" style="background:#152238">🔧 Plomería</option>
+                        <option value="gas" style="background:#152238">🔥 Gas</option>
+                        <option value="albanileria" style="background:#152238">🧱 Albañilería</option>
+                        <option value="pintura" style="background:#152238">🎨 Pintura</option>
+                        <option value="otro" style="background:#152238">🏠 Otro / Consulta general</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cf-message">Descripción del trabajo <span aria-hidden="true" style="color:var(--amber)">*</span></label>
+                    <textarea id="cf-message" name="descripcion" placeholder="Contanos brevemente qué necesitás..." required aria-required="true" aria-describedby="cf-message-error"></textarea>
+                    <span class="field-error" id="cf-message-error" role="alert">Por favor describí el trabajo o consulta.</span>
+                </div>
+                <button type="submit" class="btn-primary" style="width:100%; justify-content:center; font-size:1rem;" aria-label="Enviar consulta de servicio">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+                    Enviar consulta
+                </button>
+            </form>
+            <div class="form-success" id="form-success" aria-live="polite">
+                <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <h4 style="font-family:var(--font-display); font-size:1.4rem; font-weight:900; text-transform:uppercase; margin-bottom:.5rem;">¡Consulta enviada!</h4>
+                <p>Abriremos WhatsApp con tu mensaje pre-cargado. Te respondemos en menos de 1 hora hábil.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" aria-labelledby="faq-title">
+    <div class="reveal">
+        <span class="section-tag">Preguntas frecuentes</span>
+        <h2 class="section-title" id="faq-title">Lo que siempre preguntan</h2>
+    </div>
+
+    <div class="faq-grid" style="margin-top:3rem;" role="list">
+
+        <div class="faq-item" role="listitem" aria-expanded="false">
+            <button class="faq-q" aria-controls="faq-a-1" id="faq-q-1">
+                ¿El presupuesto tiene algún costo?
+                <span class="faq-arrow" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-a" id="faq-a-1" role="region" aria-labelledby="faq-q-1">
+                No, el presupuesto es completamente gratis y sin ningún compromiso. Podés pedirlo, verlo y decidir tranquilo.
+            </div>
+        </div>
+
+        <div class="faq-item" role="listitem" aria-expanded="false">
+            <button class="faq-q" aria-controls="faq-a-2" id="faq-q-2">
+                ¿En cuánto tiempo pueden venir?
+                <span class="faq-arrow" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-a" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
+                Según la urgencia y la disponibilidad, podemos estar el mismo día o al día siguiente. Siempre lo coordinamos rápido por WhatsApp.
+            </div>
+        </div>
+
+        <div class="faq-item" role="listitem" aria-expanded="false">
+            <button class="faq-q" aria-controls="faq-a-3" id="faq-q-3">
+                ¿Tengo garantía por los trabajos?
+                <span class="faq-arrow" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-a" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
+                Sí. Todos nuestros trabajos tienen garantía. Si algo no queda bien, volvemos a revisarlo sin costo adicional. Así trabajamos.
+            </div>
+        </div>
+
+        <div class="faq-item" role="listitem" aria-expanded="false">
+            <button class="faq-q" aria-controls="faq-a-4" id="faq-q-4">
+                ¿Trabajan en toda Córdoba?
+                <span class="faq-arrow" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-a" id="faq-a-4" role="region" aria-labelledby="faq-q-4">
+                Sí, trabajamos en toda la ciudad y también en algunos barrios del Gran Córdoba. Consultanos por tu zona específica.
+            </div>
+        </div>
+
+        <div class="faq-item" role="listitem" aria-expanded="false">
+            <button class="faq-q" aria-controls="faq-a-5" id="faq-q-5">
+                ¿Qué pasa si el trabajo lleva más de un día?
+                <span class="faq-arrow" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-a" id="faq-a-5" role="region" aria-labelledby="faq-q-5">
+                Todo eso queda acordado en el presupuesto inicial. Sabés de antemano cuántos días va a durar y el costo total. Sin sorpresas.
+            </div>
+        </div>
+
+        <div class="faq-item" role="listitem" aria-expanded="false">
+            <button class="faq-q" aria-controls="faq-a-6" id="faq-q-6">
+                ¿Traen los materiales o los pongo yo?
+                <span class="faq-arrow" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-a" id="faq-a-6" role="region" aria-labelledby="faq-q-6">
+                Podemos manejarlo de las dos formas. Lo coordinamos en el presupuesto. Si necesitamos materiales, te informamos el costo exacto por adelantado.
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta" aria-labelledby="cta-title">
+    <div class="final-cta-inner reveal">
+        <h2 id="cta-title">¿Seguís esperando que se arregle solo?</h2>
+        <p>Cada día que esperás, el problema puede crecer. Escribinos ahora, sin cargo, sin compromiso — y hoy mismo podemos tener un plan.</p>
+        <a href="https://wa.me/5493512049232?text=Hola%20Santiago,%20quiero%20un%20presupuesto%20sin%20cargo."
+           target="_blank" rel="noopener noreferrer"
+           class="btn-dark"
+           aria-label="Contactar a SG Resuelve por WhatsApp ahora">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Contactar a SG Resuelve ahora
+        </a>
+        <p style="margin-top:1.2rem; font-size:.82rem; opacity:.6;">+54 9 351 204-9232 · Atención personalizada · Sin espera</p>
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+    <div class="logo" aria-label="SG Resuelve">SG<span>Resuelve</span></div>
+    <p>© 2025 SG Resuelve — Córdoba, Argentina</p>
+    <p><a href="https://wa.me/5493512049232" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp al +54 9 351 204-9232">+54 9 351 204-9232</a></p>
+</footer>
+
+<!-- WA FLOAT — aparece tras 200px de scroll -->
+<a href="https://wa.me/5493512049232?text=Hola%20Santiago,%20necesito%20hacer%20una%20consulta."
+   target="_blank" rel="noopener noreferrer"
+   class="wa-float"
+   id="wa-float"
+   aria-label="Consultar gratis por WhatsApp"
+   title="Consultar por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+/* ═══════════════════════════════════════════════
+   1. STICKY HEADER
+═══════════════════════════════════════════════ */
+const header = document.getElementById('header');
+const waFloat = document.getElementById('wa-float');
+
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+
+    // Sticky header
+    header.classList.toggle('scrolled', scrollY > 60);
+
+    // WA float: aparece después de 200px de scroll
+    if (scrollY > 200) {
+        waFloat.classList.add('wa-visible');
+    } else {
+        waFloat.classList.remove('wa-visible');
+    }
+}, { passive: true });
+
+/* ═══════════════════════════════════════════════
+   2. COUNTER ANIMATION
+═══════════════════════════════════════════════ */
+function animateCounters() {
+    document.querySelectorAll('.stat-num[data-target]').forEach(el => {
+        const target = +el.dataset.target;
+        const suffix = el.dataset.target == '98' ? '%' : el.dataset.target == '5' ? '' : '+';
+        let current = 0;
+        const step = target / 60;
+        const timer = setInterval(() => {
+            current = Math.min(current + step, target);
+            el.textContent = Math.floor(current) + (current >= target ? suffix : '');
+            if (current >= target) clearInterval(timer);
+        }, 25);
+    });
+}
+
+/* ═══════════════════════════════════════════════
+   3. INTERSECTION OBSERVER — REVEAL + COUNTERS
+═══════════════════════════════════════════════ */
+const revealIO = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(el => revealIO.observe(el));
+
+const statsEl = document.querySelector('.stats');
+if (statsEl) {
+    const statsIO = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) { animateCounters(); statsIO.disconnect(); }
+    }, { threshold: 0.3 });
+    statsIO.observe(statsEl);
+}
+
+/* ═══════════════════════════════════════════════
+   4. FAQ ACCORDION — con ARIA
+═══════════════════════════════════════════════ */
+document.querySelectorAll('.faq-item').forEach(item => {
+    const btn = item.querySelector('.faq-q');
+    const panel = item.querySelector('.faq-a');
+
+    btn.addEventListener('click', () => {
+        const isOpen = item.getAttribute('aria-expanded') === 'true';
+
+        // Cerrar todos
+        document.querySelectorAll('.faq-item').forEach(other => {
+            other.setAttribute('aria-expanded', 'false');
+            other.querySelector('.faq-a').setAttribute('hidden', '');
+        });
+
+        // Abrir el clickeado si estaba cerrado
+        if (!isOpen) {
+            item.setAttribute('aria-expanded', 'true');
+            panel.removeAttribute('hidden');
+        }
+    });
+
+    // Estado inicial: ocultar paneles
+    panel.setAttribute('hidden', '');
+});
+
+/* ═══════════════════════════════════════════════
+   5. STAGGER para grids de cards
+═══════════════════════════════════════════════ */
+document.querySelectorAll('.services-grid, .testimonials-grid').forEach(grid => {
+    grid.querySelectorAll('.reveal').forEach((card, i) => {
+        card.style.transitionDelay = `${i * 0.08}s`;
+    });
+});
+
+/* ═══════════════════════════════════════════════
+   6. VALIDACIÓN DE FORMULARIO
+═══════════════════════════════════════════════ */
+const contactForm = document.getElementById('contact-form');
+const formSuccess = document.getElementById('form-success');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        let valid = true;
+
+        // Campos requeridos a validar
+        const rules = [
+            { id: 'cf-name',    errorId: 'cf-name-error',    msg: 'Por favor ingresá tu nombre.' },
+            { id: 'cf-phone',   errorId: 'cf-phone-error',   msg: 'Por favor ingresá un número de contacto.' },
+            { id: 'cf-message', errorId: 'cf-message-error', msg: 'Por favor describí el trabajo o consulta.' },
+        ];
+
+        rules.forEach(({ id, errorId }) => {
+            const field = document.getElementById(id);
+            const errEl = document.getElementById(errorId);
+            const isEmpty = field.value.trim() === '';
+
+            field.classList.toggle('error', isEmpty);
+            errEl.classList.toggle('visible', isEmpty);
+            field.setAttribute('aria-invalid', isEmpty ? 'true' : 'false');
+
+            if (isEmpty) valid = false;
+
+            // Limpiar error al escribir
+            field.addEventListener('input', function onInput() {
+                if (field.value.trim() !== '') {
+                    field.classList.remove('error');
+                    errEl.classList.remove('visible');
+                    field.removeAttribute('aria-invalid');
+                    field.removeEventListener('input', onInput);
+                }
+            });
+        });
+
+        if (!valid) {
+            // Foco al primer campo con error
+            const firstError = contactForm.querySelector('.error');
+            if (firstError) firstError.focus();
+            return;
+        }
+
+        // Formulario válido → componer mensaje de WhatsApp y abrir
+        const nombre   = document.getElementById('cf-name').value.trim();
+        const telefono = document.getElementById('cf-phone').value.trim();
+        const servicio = document.getElementById('cf-service').value;
+        const mensaje  = document.getElementById('cf-message').value.trim();
+
+        const servicioLabel = document.getElementById('cf-service').options[document.getElementById('cf-service').selectedIndex].text;
+        const waMsg = encodeURIComponent(
+            `Hola, soy ${nombre}.\n` +
+            `📱 Contacto: ${telefono}\n` +
+            `🔧 Servicio: ${servicio ? servicioLabel : 'Consulta general'}\n` +
+            `📝 ${mensaje}`
+        );
+
+        // Mostrar feedback de éxito
+        contactForm.style.display = 'none';
+        formSuccess.classList.add('visible');
+
+        // Abrir WhatsApp con pequeño delay para que el usuario vea el feedback
+        setTimeout(() => {
+            window.open(`https://wa.me/5493512049232?text=${waMsg}`, '_blank', 'noopener,noreferrer');
+        }, 600);
+    });
+}
+</script>
+
+</body>
+</html>
