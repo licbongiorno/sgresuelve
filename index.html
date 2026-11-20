@@ -311,7 +311,7 @@ p { text-wrap: pretty; }
   max-width: 85%; padding: .5rem .7rem .35rem; border-radius: 10px; font-size: var(--t-s); line-height: 1.4;
   box-shadow: 0 1px 0 rgba(0, 0, 0, .12);
 }
-.bubble time { display: block; text-align: right; font-size: .6875rem; color: rgba(29, 36, 34, .55); margin-top: .15rem; }
+.bubble time { display: block; text-align: right; font-size: .6875rem; color: #4A5651; margin-top: .15rem; }
 .bubble.me { align-self: flex-end; background: #D9FDD3; border-top-right-radius: 3px; }
 .bubble.them { align-self: flex-start; background: #fff; border-top-left-radius: 3px; }
 .bubble.photo { padding: .3rem; }
@@ -390,6 +390,7 @@ p { text-wrap: pretty; }
 .review figcaption strong { color: var(--grafito); display: block; }
 .review-tag { display: inline-block; font-size: var(--t-xs); font-weight: 700; background: var(--revoque); border: 1px solid var(--linea); border-radius: 999px; padding: .15rem .65rem; align-self: flex-start; }
 .carousel-ui { display: none; }
+.reviews-track:focus-visible { outline-offset: 6px; border-radius: var(--r-m); }
 
 @media (max-width: 860px) {
   .reviews-track {
@@ -472,7 +473,8 @@ details[open] .faq-icon { transform: rotate(45deg); background: var(--amarillo);
 .direct { display: grid; gap: .75rem; margin-top: 1.5rem; }
 .direct .btn { justify-content: flex-start; width: 100%; }
 .facts { margin-top: 2rem; display: grid; gap: 1rem; font-style: normal; }
-.facts dl > div { display: grid; grid-template-columns: 1.5rem minmax(0, 1fr); gap: .75rem; }
+.facts dl > div { display: grid; grid-template-columns: 1.5rem minmax(0, 1fr); column-gap: .75rem; }
+.facts dl > div > svg { grid-row: span 2; }
 .facts svg { width: 1.5rem; height: 1.5rem; color: var(--azul); margin-top: .1rem; }
 .facts dt { font-weight: 700; font-size: var(--t-s); }
 .facts dd { margin: 0; color: var(--grafito-2); font-size: var(--t-s); }
@@ -579,7 +581,7 @@ details[open] .faq-icon { transform: rotate(45deg); background: var(--amarillo);
 
 <header class="site-header" id="header">
   <div class="wrap header-inner">
-    <a class="brand" href="#inicio" aria-label="SG Resuelve, volver al inicio" translate="no">
+    <a class="brand" href="#inicio" translate="no">
       <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#1D2422"/><path d="M0 26h32v6H0z" fill="#FFC20E"/><text x="16" y="20" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-weight="800" font-size="14" fill="#FFC20E">SG</text></svg>
       SG Resuelve
     </a>
@@ -752,7 +754,7 @@ details[open] .faq-icon { transform: rotate(45deg); background: var(--amarillo);
     </div>
     <!-- DATO A CONFIRMAR: testimonios tomados de la web anterior. Si hay perfil de Google, enlazar las reseñas. -->
     <div class="carousel" aria-roledescription="carrusel" aria-label="Opiniones de clientes">
-      <ul class="reviews-track" id="reviews-track">
+      <ul class="reviews-track" id="reviews-track" tabindex="0" aria-label="Opiniones, deslizá para ver más">
         <li class="review" aria-roledescription="opinión" aria-label="1 de 3">
           <span class="review-tag">Plomería</span>
           <figure>
@@ -889,15 +891,15 @@ details[open] .faq-icon { transform: rotate(45deg); background: var(--amarillo);
         <dl style="display:grid;gap:1rem">
           <div>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            <div><dt>Zona</dt><dd>Córdoba Capital y Gran Córdoba</dd></div>
+            <dt>Zona</dt><dd>Córdoba Capital y Gran Córdoba</dd>
           </div>
           <div>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-            <div><dt>Horario</dt><dd>Lunes a viernes de 8 a 19&nbsp;h. Sábados de 8 a 13&nbsp;h.</dd></div>
+            <dt>Horario</dt><dd>Lunes a viernes de 8 a 19&nbsp;h. Sábados de 8 a 13&nbsp;h.</dd>
           </div>
           <div>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.18 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-            <div><dt>Teléfono y WhatsApp</dt><dd><a class="link" href="tel:+5493512049232">+54&nbsp;9&nbsp;351&nbsp;204-9232</a></dd></div>
+            <dt>Teléfono y WhatsApp</dt><dd><a class="link" href="tel:+5493512049232">+54&nbsp;9&nbsp;351&nbsp;204-9232</a></dd>
           </div>
         </dl>
       </address>
@@ -972,7 +974,7 @@ details[open] .faq-icon { transform: rotate(45deg); background: var(--amarillo);
 
     <!-- Crédito de diseño web: Lic. Nicolás Bongiorno -->
     <div class="nb-credit-wrap">
-      <a class="nb-credit" href="https://wa.me/5493516575261?text=Hola%20Nicol%C3%A1s%2C%20vi%20la%20web%20de%20SG%20Resuelve%20y%20me%20gustar%C3%ADa%20una%20p%C3%A1gina%20web%20para%20mi%20proyecto." target="_blank" rel="noopener" aria-label="Diseño y desarrollo web por Lic. Nicolás Bongiorno. ¿Querés una web así? Escribile por WhatsApp al 351 657-5261">
+      <a class="nb-credit" href="https://wa.me/5493516575261?text=Hola%20Nicol%C3%A1s%2C%20vi%20la%20web%20de%20SG%20Resuelve%20y%20me%20gustar%C3%ADa%20una%20p%C3%A1gina%20web%20para%20mi%20proyecto." target="_blank" rel="noopener" aria-label="Diseño y desarrollo web Lic. Nicolás Bongiorno. ¿Querés una web así? Escribile por WhatsApp al 351 657-5261">
         <span class="nb-credit__badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></span>
         <span class="nb-credit__text"><span class="nb-credit__small">Diseño y desarrollo web</span><span class="nb-credit__name">Lic. Nicolás Bongiorno</span></span>
         <span class="nb-credit__cta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm4.52 11.99c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.78.97-.15.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span>¿Querés una web así? <strong>351 657-5261</strong></span></span>
